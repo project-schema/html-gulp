@@ -1,0 +1,20 @@
+.rud-load-more {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 52px;
+	.btn-rud-primary {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	@include responsive('2xl') {
+		margin-top: 40px;
+	}
+	@include responsive('md') {
+		margin-top: 30px;
+	}
+	.btn {
+		width: 100%;
+		max-width: 300px;
+	}
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!-- swiper css -->
+		<link
+			rel="stylesheet"
+			href="plugins/swiperjs/swiper-bundle.min.css"
+		/>
+
+		<!-- icon  -->
+		<script src="plugins/iconify/iconify-icon.min.js"></script>
+
+		<!-- bootstrap -->
+		<link
+			rel="stylesheet"
+			href="plugins/bootstrap/css/bootstrap.min.css"
+		/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+		<!-- header  -->
+		<header id="ru-header" class="rud-header">
+			<div class="rud-header-container">
+				<div class="rud-header_inner">
+					<div class="rud-header_logo">
+						<a href="index.html">
+							<img id="logo" src="images/logo/logo.png" alt="logo" />
+						</a>
+					</div>
+					<div class="rud-header_menus">
+						<ul class="ru-nav">
+							<li><a class="ru-nav-link" href="#">Home</a></li>
+							<li><a class="ru-nav-link" href="#">About Us</a></li>
+							<li>
+								<div class="dropdown-center ru-nav-link">
+									<button
+										class="sub_drop"
+										type="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<span>Menu</span>
+										<span class="ru_ic"
+											><iconify-icon
+												icon="akar-icons:triangle-down-fill"
+											></iconify-icon
+										></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Action</a></li>
+										<li>
+											<a class="dropdown-item" href="#">Another action</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<div class="dropdown-center ru-nav-link">
+									<button
+										class="sub_drop"
+										type="button"
+										data-bs-toggle="dropdown"
+										aria-expanded="false"
+									>
+										<span>Pages</span>
+										<span class="ru_ic"
+											><iconify-icon
+												icon="akar-icons:triangle-down-fill"
+											></iconify-icon
+										></span>
+									</button>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Action</a></li>
+										<li>
+											<a class="dropdown-item" href="#">Another action</a>
+										</li>
+										<li>
+											<a class="dropdown-item" href="#">Something else here</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li><a class="ru-nav-link" href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div class="rud-header_actions">
+						<ul class="rud-header_actions_list">
+							<li>
+								<a class="btn-rud-primary" href="#">
+									<span class="icon"
+										><iconify-icon icon="heroicons:calendar"></iconify-icon
+									></span>
+									<span class="ru-tx-book">BOOK A TABLE</span>
+								</a>
+							</li>
+						</ul>
+						<div class="rud-header_mobile">
+							<button
+								type="button"
+								data-bs-toggle="offcanvas"
+								data-bs-target="#offcanvasRight"
+								aria-controls="offcanvasRight"
+								class="rud-header_mobile_btn"
+							>
+								<iconify-icon
+									icon="heroicons:adjustments-horizontal-16-solid"
+								></iconify-icon>
+							</button>
+						</div>
+						<div
+							class="offcanvas offcanvas-end"
+							tabindex="-1"
+							id="offcanvasRight"
+							aria-labelledby="offcanvasRightLabel"
+						>
+							<div class="offcanvas-header">
+								<div class="rud-header_logo">
+									<img
+										id="logo"
+										src="images/logo/logo.png"
+										alt="logo"
+									/>
+								</div>
+								<button
+									type="button"
+									class="btn-close"
+									data-bs-dismiss="offcanvas"
+									aria-label="Close"
+								></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Menu</a></li>
+									<li><a href="#">Pages</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>

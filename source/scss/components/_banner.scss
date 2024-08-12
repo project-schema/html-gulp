@@ -1,0 +1,36 @@
+.rud-banner {
+	.ru-hero-slider {
+		min-height: 725px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		position: relative;
+		z-index: 0;
+		display: flex;
+		align-items: center;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 0.5) 50.3%,
+				rgba(102, 102, 102, 0) 99.29%
+			);
+			z-index: -1;
+		}
+		@include responsive('md') {
+			min-height: 500px;
+		}
+	}
+	.rud-header-text {
+		max-width: 695px;
+		.head {
+			max-width: 570px;
+		}
+	}
+}

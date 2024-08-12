@@ -1,0 +1,63 @@
+#ru-header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99999999;
+	position: fixed !important;
+}
+.rud-header {
+	background: #0c0e0e;
+	color: #fff;
+	height: 105px;
+	display: flex;
+	align-items: center;
+
+	&_logo {
+		width: 110px;
+
+		img {
+			max-width: 110px;
+			height: 40px;
+			object-fit: contain;
+		}
+	}
+	&-container {
+		max-width: 1420px;
+		margin-left: auto;
+		margin-right: auto;
+		width: calc(100% - 50px);
+		@include responsive('sm') {
+			width: calc(100% - 20px);
+		}
+	}
+	&_menus {
+		.ru-nav {
+			display: flex;
+			align-items: center;
+			gap: 45px;
+		}
+	}
+
+	&_inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&_mobile {
+		display: none;
+	}
+	&.sticky {
+		width: 100%;
+		background-color: #000;
+		box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+		color: #fff;
+
+		.rounded-outline-btn {
+			&:hover {
+				background: #000;
+				color: #fff;
+			}
+		}
+	}
+}

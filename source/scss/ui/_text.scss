@@ -1,0 +1,160 @@
+.rud-header-text {
+	.head {
+		font-family: 'Bebas Neue';
+		font-size: 80px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 100px; /* 125% */
+		margin-bottom: 22px;
+
+		@include responsive('2xl') {
+			font-size: 60px;
+			line-height: 70px;
+			margin-bottom: 16px;
+		}
+		@include responsive('md') {
+			font-size: 40px;
+			line-height: 50px;
+			margin-bottom: 10px;
+		}
+	}
+	.desc {
+		color: #c0c0c0;
+		font-family: Cabin;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 26px;
+
+		@include responsive('2xl') {
+			font-size: 18px;
+			line-height: 22px;
+		}
+		@include responsive('md') {
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+	.normal {
+		color: #d9d9d9;
+		text-align: center;
+		font-family: Cabin;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 36px; /* 200% */
+	}
+	.actions {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin-top: 52px;
+
+		@include responsive('2xl') {
+			gap: 16px;
+			margin-top: 40px;
+		}
+		@include responsive('md') {
+			gap: 12px;
+			margin-top: 30px;
+		}
+	}
+	.highlight {
+		color: #b99272;
+		text-align: center;
+		font-family: Cabin;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 20px; /* 111.111% */
+
+		@include responsive('2xl') {
+			font-size: 16px;
+			line-height: 18px;
+		}
+		@include responsive('md') {
+			font-size: 14px;
+			line-height: 16px;
+		}
+	}
+	.top-bar {
+	}
+}
+
+.title {
+	color: #fff;
+	font-family: 'Bebas Neue';
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 56px; /* 116.667% */
+	margin-bottom: 22px;
+
+	@include responsive('2xl') {
+		font-size: 36px;
+		line-height: 40px;
+		margin-bottom: 16px;
+	}
+	@include responsive('md') {
+		font-size: 24px;
+		line-height: 28px;
+		margin-bottom: 10px;
+	}
+}
+
+.highlight {
+	color: #b99272;
+	font-family: Cabin;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 20px; /* 111.111% */
+	margin-bottom: 22px;
+
+	@include responsive('2xl') {
+		font-size: 16px;
+		line-height: 18px;
+		margin-bottom: 16px;
+	}
+	@include responsive('md') {
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 10px;
+	}
+}
+
+.desc {
+	color: #d9d9d9;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px; /* 200% */
+
+	@include responsive('2xl') {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	@include responsive('md') {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+.rud-badge {
+	border-radius: 66px;
+	background: #fff;
+	display: flex;
+	height: 38px;
+	padding: 1px 24px 1px 22px;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	text-align: center;
+	font-family: 'Bebas Neue';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 36px; /* 225% */
+	width: fit-content;
+}

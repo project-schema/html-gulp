@@ -1,0 +1,1207 @@
+// .rud-about-us
+.rud-about-us {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	@include responsive('2xl') {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	&-content {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		align-items: center;
+		gap: 80px;
+		.left {
+		}
+		.right {
+			display: flex;
+			flex-direction: column;
+			gap: 22px;
+			.title {
+				color: #b99272;
+				font-family: Cabin;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 20px; /* 111.111% */
+				@include responsive('2xl') {
+					font-size: 16px;
+					line-height: 18px;
+				}
+			}
+			.heading {
+				color: #fff;
+				font-family: 'Bebas Neue';
+				font-size: 48px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 56px; /* 116.667% */
+				max-width: 560px;
+				@include responsive('2xl') {
+					font-size: 36px;
+					line-height: 40px;
+				}
+			}
+			.desc {
+				color: #d9d9d9;
+				font-family: Inter;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 36px; /* 200% */
+				max-width: 650px;
+				@include responsive('2xl') {
+					font-size: 16px;
+					line-height: 24px;
+				}
+			}
+			.user-box {
+				display: flex;
+				padding: 12px 18px;
+				align-items: flex-start;
+				gap: 31px;
+				border-radius: 5px;
+				background: #b99272;
+				max-width: 530px;
+
+				@include responsive('2xl') {
+					gap: 20px;
+				}
+				.img {
+					width: 83px;
+					height: 83px;
+					border-radius: 83px;
+					flex-shrink: 0;
+
+					@include responsive('2xl') {
+						width: 60px;
+						height: 60px;
+					}
+					img {
+						background-color: #d9d9d9;
+						border-radius: 83px;
+						height: 100%;
+					}
+				}
+				.user-desc {
+					color: #fff;
+					font-family: Cabin;
+					font-size: 26px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 29px; /* 111.538% */
+					@include responsive('2xl') {
+						font-size: 18px;
+						line-height: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// about-us-menu
+.about-us-menu {
+	background: #0c0e0e;
+	padding-top: 70px;
+	padding-bottom: 70px;
+
+	@include responsive('2xl') {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	@include responsive('md') {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.ru-items-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 23px;
+
+		@include responsive('2xl') {
+			gap: 16px;
+		}
+
+		@include responsive('md') {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include responsive('sm') {
+			grid-template-columns: 1fr;
+		}
+		.item {
+			display: flex;
+			height: 270px;
+			padding: 20px 29px;
+			justify-content: center;
+			align-items: center;
+			flex-shrink: 0;
+			border-radius: 5px;
+			background-color: #0c0e0e;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			position: relative;
+			z-index: 1;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 5px;
+				background: rgba(0, 0, 0, 0.5);
+				z-index: -1;
+			}
+			&-content {
+				border: 1px solid #b99272;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				gap: 14px;
+				@include responsive('2xl') {
+					gap: 10px;
+				}
+				.icon {
+					font-size: 24px;
+
+					@include responsive('2xl') {
+						font-size: 20px;
+					}
+				}
+				.title {
+					color: #fff;
+					font-family: 'Bebas Neue';
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 25px; /* 104.167% */
+
+					@include responsive('2xl') {
+						font-size: 20px;
+						line-height: 22px;
+					}
+
+					@include responsive('md') {
+						font-size: 18px;
+						line-height: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.rud-pup-categories {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	&-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 50px;
+		.left {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			row-gap: 30px;
+			column-gap: 22px;
+			.img-box {
+				display: flex;
+				flex-direction: column;
+				gap: 22px;
+				&:last-child {
+					margin-top: 80px;
+				}
+			}
+		}
+		.right {
+			.title {
+				max-width: 560px;
+			}
+			.actions {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				margin-top: 52px;
+			}
+		}
+	}
+}
+
+// rud-best-menu
+.rud-best-menu {
+	margin-top: 124px;
+	margin-bottom: 124px;
+	.wrap {
+		border-radius: 20px;
+		background: #0c0e0e;
+		padding: 75px 80px;
+	}
+	.rud-header-text {
+		text-align: center;
+		margin-bottom: 52px;
+
+		@include responsive('2xl') {
+			margin-bottom: 30px;
+		}
+
+		@include responsive('md') {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+// rud-best-menu-list
+.rud-best-menu-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 75px;
+	.items {
+		display: flex;
+		flex-direction: column;
+		gap: 44px;
+		.list {
+			&-title {
+				color: #fff;
+				font-family: 'Bebas Neue';
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 25px; /* 104.167% */
+				margin-bottom: 12px;
+			}
+			&-desc {
+				color: #d9d9d9;
+				font-family: Cabin;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 20px; /* 111.111% */
+				margin-bottom: 4px;
+			}
+			&-price {
+				color: #b99272;
+				font-family: Cabin;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 36px; /* 180% */
+				text-align: right;
+				position: relative;
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 50%;
+					border-bottom: 1px dashed #b99272;
+					width: 78%;
+					height: 1px;
+					transform: translate(0, 50%);
+				}
+			}
+		}
+	}
+}
+
+.rud-booking {
+	padding-top: 125px;
+	padding-bottom: 70px;
+	background: #0c0e0e;
+	.wrap {
+		max-width: 865px;
+		margin-left: auto;
+		margin-right: auto;
+		border-top: 4px solid #b99272;
+		.rud-header-text {
+			text-align: center;
+			margin-bottom: 52px;
+			margin-top: 12px;
+		}
+	}
+	&-from {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: 26px;
+		column-gap: 24px;
+		.span-2 {
+			grid-column: span 2;
+		}
+	}
+
+	.submit {
+		margin-top: 52px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button {
+			padding-left: 32px;
+			padding-right: 32px;
+		}
+	}
+}
+
+.ru-amenities {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	position: relative;
+	.rud-header-text {
+		text-align: center;
+		max-width: 769px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.ru-reservation-bg-img {
+		position: absolute;
+		left: 0;
+		bottom: 11%;
+		user-select: none;
+	}
+
+	&_header {
+		max-width: 965px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		.ru-title {
+			margin-bottom: 22px;
+		}
+	}
+
+	&_container {
+		display: flex;
+		gap: 60px;
+		align-items: center;
+		margin-top: 61px;
+		@include responsive('xl') {
+			gap: 20px;
+		}
+
+		&.reverse {
+			flex-direction: row-reverse;
+			@include responsive('xmd') {
+				flex-direction: column;
+			}
+		}
+		@include responsive('xmd') {
+			flex-direction: column;
+		}
+
+		.ru-amenities_imageBox {
+			flex-shrink: 0;
+			width: 560px;
+			@include responsive('xl') {
+				width: 450px;
+			}
+			@include responsive('sm') {
+				width: 100%;
+			}
+			img {
+				width: 100%;
+				height: auto;
+				border-radius: 20px;
+			}
+		}
+	}
+
+	&_content {
+		&-title {
+			color: #fff;
+			font-family: 'Bebas Neue';
+			font-size: 48px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 65px; /* 135.417% */
+			margin-bottom: 22px;
+			@include responsive('2xl') {
+				font-size: 36px;
+				margin-bottom: 18px;
+			}
+		}
+		&-desc {
+			color: #fff;
+			font-family: Cabin;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 36px; /* 200% */
+			@include responsive('2xl') {
+				font-size: 16px;
+			}
+		}
+
+		&-list {
+			margin-top: 32px;
+			@include responsive('2xl') {
+				margin-top: 24px;
+			}
+
+			td {
+				padding-right: 27px;
+				padding-bottom: 32px;
+				@include responsive('2xl') {
+					padding-bottom: 24px;
+				}
+				@include responsive('xl') {
+					display: block;
+					padding-right: 0;
+				}
+			}
+
+			&-item {
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				color: #fff;
+				font-family: Cabin;
+				font-size: 18px;
+				font-weight: 500;
+
+				.icon {
+					color: #b99272;
+				}
+			}
+		}
+	}
+}
+
+// rud-chefs
+.rud-chefs {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background: #0c0e0e;
+	.rud-header-text {
+		text-align: center;
+		max-width: 735px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 55px;
+
+		@include responsive('sm') {
+			margin-bottom: 30px;
+		}
+	}
+
+	&_container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 24px;
+		@include responsive('md') {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		@include responsive('sm') {
+			grid-template-columns: repeat(1, 1fr);
+		}
+		.rud-chefs_item {
+			padding: 20px 40px 0 40px;
+			border-radius: 5px;
+			background: #0e1317;
+			.content {
+				text-align: center;
+				.chef-name {
+					color: #fff;
+					font-family: Cabin;
+					font-size: 22px;
+					font-style: normal;
+					font-weight: 600;
+					line-height: 33.333px; /* 151.515% */
+				}
+				.chef-title {
+					color: #b99272;
+					font-family: Cabin;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 28.889px; /* 160.494% */
+				}
+			}
+			.chef-img {
+				margin-top: 40px;
+				img {
+					border-radius: 5px 5px 0px 0px;
+				}
+			}
+		}
+	}
+}
+
+// rud-reviews
+.rud-reviews {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	.rud-header-text {
+		max-width: 572px;
+		.title {
+			color: #fff;
+			font-family: 'Bebas Neue';
+			font-size: 56px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 52px; /* 92.857% */
+		}
+	}
+
+	&-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 24px;
+
+		.item {
+			padding: 40px;
+			border-radius: 10px;
+			background: #0c0e0e;
+			.users {
+				margin-bottom: 20px;
+				display: flex;
+				align-items: center;
+				gap: 12px;
+				.img {
+					img {
+						width: 70px;
+						height: 70px;
+						flex-shrink: 0;
+						object-fit: cover;
+						border-radius: 50%;
+					}
+				}
+				.u-name {
+					color: #fff;
+					font-family: Cabin;
+					font-size: 22px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: 30px; /* 136.364% */
+				}
+			}
+			.rev-text {
+				color: #d9d9d9;
+				font-family: Cabin;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 28px; /* 155.556% */
+			}
+		}
+	}
+}
+
+// rud-blog-news
+.rud-blog-news {
+	margin-bottom: 90px;
+	.rud-header-text {
+		text-align: center;
+	}
+
+	&_container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 24px;
+		margin-top: 52px;
+		@include responsive('md') {
+			grid-template-columns: repeat(2, 1fr);
+			margin-top: 30px;
+		}
+		@include responsive('sm') {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.item {
+			border-radius: 5px;
+			background: #0c0e0e;
+			position: relative;
+			.img-box {
+				img {
+					max-height: 241px;
+					object-fit: cover;
+					border-radius: 5px 5px 0px 0px;
+					height: 100%;
+				}
+			}
+
+			.content {
+				padding: 21px 17px 26px 23px;
+				.item-title {
+					color: #fff;
+					text-align: center;
+					font-family: 'Bebas Neue';
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 36px; /* 150% */
+					margin-bottom: 12px;
+					display: inline-block;
+				}
+				.item-text {
+					color: #d9d9d9;
+					font-family: Cabin;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 29px; /* 161.111% */
+				}
+				.item-times {
+					border-top: 1px dashed #6f6f6f;
+					margin-top: 20px;
+					padding-top: 20px;
+					color: #cfcfcf;
+					font-family: Inter;
+					font-size: 12px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 160%; /* 19.2px */
+					display: flex;
+					align-items: center;
+					gap: 17px;
+					.time {
+						display: flex;
+						align-items: center;
+						gap: 13px;
+						.icon {
+							font-size: 20px;
+						}
+					}
+				}
+			}
+			.rud-badge {
+				position: absolute;
+				top: 21px;
+				left: 23px;
+				z-index: 1;
+			}
+		}
+	}
+}
+
+.rud-lunch-dinner {
+	padding-top: 112px;
+	padding-bottom: 112px;
+	@include responsive('2xl') {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+
+	@include responsive('md') {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.rud-header-text {
+		text-align: center;
+		max-width: 963px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 52px;
+
+		@include responsive('2xl') {
+			margin-bottom: 40px;
+		}
+
+		@include responsive('md') {
+			margin-bottom: 30px;
+		}
+	}
+	&_wrap {
+		display: flex;
+		gap: 48px;
+
+		@include responsive('2xl') {
+			gap: 32px;
+		}
+		@include responsive('md') {
+			gap: 24px;
+		}
+
+		.content {
+			flex: 1;
+			.ld-text {
+				margin-bottom: 32px;
+				@include responsive('2xl') {
+					margin-bottom: 20px;
+				}
+				.ld-title {
+					color: #fff;
+					font-family: 'Bebas Neue';
+					font-size: 48px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 36px; /* 75% */
+					margin-bottom: 20px;
+
+					@include responsive('2xl') {
+						font-size: 36px;
+						line-height: 40px;
+					}
+
+					@include responsive('md') {
+						font-size: 24px;
+						line-height: 28px;
+					}
+					.marked {
+						color: #b99272;
+					}
+				}
+				.ld-normal {
+					color: #fff;
+					font-family: Inter;
+					font-size: 18px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 30px; /* 166.667% */
+
+					@include responsive('2xl') {
+						font-size: 14px;
+						line-height: 18px;
+					}
+				}
+			}
+			.ld-time {
+				margin-bottom: 40px;
+
+				@include responsive('2xl') {
+					margin-bottom: 30px;
+				}
+
+				@include responsive('md') {
+					margin-bottom: 20px;
+				}
+				&-title {
+					color: #fff;
+					font-family: 'Bebas Neue';
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 36px; /* 150% */
+					margin-bottom: 22px;
+
+					@include responsive('2xl') {
+						font-size: 20px;
+						line-height: 24px;
+						margin-bottom: 16px;
+					}
+				}
+				.item-times {
+					display: flex;
+					align-items: center;
+					gap: 40px;
+
+					@include responsive('2xl') {
+						gap: 20px;
+					}
+					.time {
+						color: #fff;
+						text-align: center;
+						font-family: Inter;
+						font-size: 16px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 29px; /* 181.25% */
+						display: flex;
+						align-items: center;
+						gap: 7px;
+
+						@include responsive('2xl') {
+							font-size: 14px;
+							line-height: 18px;
+						}
+
+						.icon {
+							color: #b99272;
+							font-size: 20px;
+
+							@include responsive('2xl') {
+								font-size: 16px;
+							}
+						}
+						span {
+						}
+					}
+					.time {
+					}
+				}
+			}
+
+			.ld-img {
+				display: flex;
+				gap: 18px;
+				img {
+					flex: 1;
+					border-radius: 10px;
+					max-height: 130px;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+		.rud-form {
+			flex: 1;
+		}
+	}
+	.submit {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 43px;
+
+		@include responsive('2xl') {
+			margin-top: 30px;
+		}
+		@include responsive('md') {
+			margin-top: 20px;
+		}
+	}
+	.luc-hour-title {
+		color: #fff;
+		font-family: 'Bebas Neue';
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 36px; /* 128.571% */
+		margin-bottom: 52px;
+		margin-top: 52px;
+
+		@include responsive('2xl') {
+			font-size: 24px;
+			line-height: 28px;
+			margin-bottom: 40px;
+			margin-top: 40px;
+		}
+		@include responsive('md') {
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 30px;
+			margin-top: 30px;
+		}
+		.lu-marked {
+			color: #b99272;
+		}
+	}
+}
+
+.luc-hours-lists {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 24px;
+	row-gap: 38px;
+	.item {
+		display: flex;
+		gap: 14px;
+		align-items: center;
+		padding-bottom: 24px;
+		border-bottom: 1px dashed #4a4a4a;
+		justify-content: space-between;
+		.img {
+			img {
+				border-radius: 5px;
+				width: 112px;
+				height: 96px;
+				object-fit: cover;
+			}
+		}
+		.info {
+			flex: 1;
+			display: flex;
+			gap: 10px;
+			justify-content: space-between;
+			&-desc {
+				display: flex;
+				align-items: flex-end;
+				margin-bottom: 10px;
+			}
+			&-badge {
+				color: #b99272;
+				font-family: Inter;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 800;
+				line-height: 14px; /* 100% */
+			}
+		}
+		.name {
+			max-width: 350px;
+			color: #fff;
+			font-family: Cabin;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 31px; /* 129.167% */
+			margin-bottom: 16px;
+		}
+		.desc {
+			max-width: 350px;
+			color: #cfcfcf;
+			font-family: Inter;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: normal;
+		}
+	}
+}
+
+.rud-special {
+	.rud-header-text {
+		max-width: 818px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		margin-bottom: 52px;
+
+		@include responsive('2xl') {
+			margin-bottom: 40px;
+		}
+		@include responsive('md') {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.ru-special-items {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+	@include responsive('lg') {
+		grid-template-columns: 1fr;
+	}
+
+	.item {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		border-radius: 10px;
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 397px;
+		display: flex;
+		align-items: flex-end;
+		padding: 24px;
+		position: relative;
+		z-index: 1;
+		&::before {
+			content: '';
+			background-color: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			border-radius: 10px;
+			height: 100%;
+			z-index: -1;
+		}
+		.badge {
+			color: #000;
+			text-align: center;
+			font-family: 'Bebas Neue';
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 36px; /* 225% */
+			border-radius: 66px;
+			background: #fff;
+			display: inline-flex;
+			padding: 1px 30px 1px 29px;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+		.name {
+			color: #fff;
+			font-family: 'Bebas Neue';
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 120%; /* 28.8px */
+			margin-bottom: 12px;
+		}
+		.date {
+			color: #939393;
+			font-family: Inter;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 29px; /* 181.25% */
+			.icon {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.ru-chefs_container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 33px;
+	@include responsive('2xl') {
+		gap: 22px;
+	}
+	@include responsive('xlg') {
+		grid-template-columns: 1fr 1fr;
+	}
+	@include responsive('sm') {
+		grid-template-columns: 1fr;
+	}
+}
+.ru-chefs_item {
+	.img-box {
+		img {
+			border-radius: 33px 33px 0 0;
+			width: 100%;
+			height: 333;
+			object-fit: cover;
+		}
+	}
+
+	.item-content {
+		padding: 22px;
+		border: 1px solid #4d4d4d;
+		background: #13181c;
+		border-radius: 0 0 33px 33px;
+		@include responsive('2xl') {
+			padding: 16px;
+		}
+		.role {
+			color: var(--Main-color, #fff);
+			font-family: Inter;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 28.889px; /* 160.494% */
+			@include responsive('2xl') {
+				font-size: 16px;
+			}
+		}
+		.name {
+			color: var(--Main-color, #fff);
+			font-family: Inter;
+			font-size: 22px;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 33.333px; /* 151.515% */
+			margin-bottom: 11px;
+			@include responsive('2xl') {
+				font-size: 18px;
+			}
+		}
+		.exp {
+			color: #d9d9d9;
+			font-family: Inter;
+			font-size: 17.778px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 28.889px; /* 162.5% */
+			display: flex;
+			align-items: center;
+			gap: 6px;
+			@include responsive('2xl') {
+				font-size: 15px;
+			}
+			.icon {
+				font-size: 11px;
+				color: #b99272;
+			}
+		}
+		hr {
+			margin: 11px 0;
+			border: 1px dashed #cacaca;
+			@include responsive('2xl') {
+				margin: 8px 0;
+			}
+		}
+	}
+}
+
+.ru-articles_items {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
+}
+.ru-articles_item {
+	display: flex;
+	flex-direction: column;
+	padding: 35px 20px 30px 20px;
+	justify-content: space-between;
+	width: 100%;
+	height: 418px;
+	flex-shrink: 0;
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.5);
+	background-image: url('../img/blogs/blog-1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+
+	@include responsive('xl') {
+		height: 340px;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		border-radius: 20px;
+		z-index: -1;
+	}
+
+	&-badge {
+		border-radius: 66px;
+		background: #fff;
+		color: #000;
+		text-align: center;
+		font-family: 'Bebas Neue';
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 36px; /* 225% */
+		height: 38px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: fit-content;
+		padding-left: 24px;
+		padding-right: 24px;
+		@include responsive('xl') {
+			font-size: 14px;
+			height: 28px;
+		}
+	}
+
+	&-title {
+		color: #fff;
+		font-family: 'Bebas Neue';
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 28.8px */
+		@include responsive('xl') {
+			font-size: 20px;
+		}
+	}
+
+	&-times {
+		color: #cfcfcf;
+		font-family: Inter;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 160%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 14px;
+		&-time {
+			display: flex;
+			align-items: center;
+			gap: 14px;
+		}
+		.icon {
+			font-size: 20px;
+		}
+	}
+}

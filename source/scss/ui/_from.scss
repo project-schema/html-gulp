@@ -1,0 +1,54 @@
+.ru-input {
+	padding: 16px 40px 19px 16px;
+	border-radius: 15px;
+	width: 100%;
+	color: #fff;
+	height: 56px;
+	border: 0;
+	outline: 0;
+	transition: 0.3s ease;
+	border-radius: 5px;
+	border: 1px solid #4a4a4a;
+	background: #0c0e0e;
+
+	&::placeholder {
+		color: #fff;
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 14px; /* 87.5% */
+	}
+	&:focus {
+		background: #0c0e0e;
+	}
+	@include responsive('xmd') {
+		font-size: 15px;
+	}
+}
+
+.ru-form_item label {
+	color: #000;
+	font-family: Inter;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 36px; /* 200% */
+	margin-bottom: 15px;
+	@include responsive('xmd') {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+}
+
+.ru-form_item-input {
+	position: relative;
+	font-size: 21px;
+	.icon {
+		position: absolute;
+		top: 50%;
+		right: 18px;
+		transform: translateY(-50%);
+		pointer-events: none;
+	}
+}
